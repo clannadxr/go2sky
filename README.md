@@ -1,14 +1,14 @@
 # GO2Sky
 
 [![CircleCI](https://circleci.com/gh/SkyAPM/go2sky.svg?style=svg)](https://circleci.com/gh/SkyAPM/go2sky)
-[![GoDoc](https://godoc.org/github.com/tetratelabs/go2sky?status.svg)](https://godoc.org/github.com/tetratelabs/go2sky)
+[![GoDoc](https://godoc.org/github.com/SkyAPM/go2sky?status.svg)](https://godoc.org/github.com/SkyAPM/go2sky)
 
 
 **GO2Sky** is an instrument SDK library, written in Go, by following [Apache SkyWalking](https://github.com/apache/incubator-skywalking) tracing and metrics formats.
 
 # Installation
 ```
-$ go get -u github.com/tetratelabs/go2sky
+$ go get -u github.com/SkyAPM/go2sky
 ```
 
 The API of this project is still evolving. The use of vendoring tool is recommended.
@@ -116,10 +116,11 @@ They are defined as constant in root package with prefix `Tag`.
 
 ## Plugins
 
-Plugins is integrated with specific framework, for instance, `net/http`, `gRPC`, `mysql` and etc. They
+Plugins is integrated with specific framework, for instance, `net/http`, `gin` and etc. They
 are stored in `plugins` package.
 
  1. [HTTP client/server example](plugins/http/example_http_test.go)
+ 1. [gin example](plugins/gin/example_gin_test.go)
 
 # License
 Apache License 2.0. See [LICENSE](LICENSE) file for details.
